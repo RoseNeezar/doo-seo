@@ -1,1 +1,1 @@
-# Gatsby starter - typescript mobx styled components
+# Gatsby test seo
