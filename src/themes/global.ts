@@ -2,24 +2,22 @@ import { createGlobalStyle, css } from "styled-components"
 
 export default createGlobalStyle`
   ${({ theme }) => css`
+    *,
+    *::after,
+    *::before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     html {
-      height: 100%;
-
-      body {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        margin: 0;
-
-        #root {
-          background: ${theme.primary};
-          display: flex;
-          font-family: sans-serif;
-          height: 100%;
-          justify-content: center;
-          padding: 15px;
-        }
-      }
+      font-size: 62.5%;
+    }
+    body {
+      box-sizing: inherit;
+      font-family: ${theme.fontFamily};
+      background-color: ${theme.colors.white};
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
     }
   `}
 `

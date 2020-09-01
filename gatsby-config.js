@@ -6,6 +6,11 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Doo Holdings Group | Build Your Financial Enterprise",
+    description: "Doo Holdings group test seo",
+    url: "https://neezar-landingpage-seo.netlify.app",
+  },
   plugins: [
     `gatsby-plugin-typescript`,
     {
